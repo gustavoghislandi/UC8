@@ -1,0 +1,36 @@
+git init //para inicializar o controle de versão de um projeto
+
+clear // limpa o terminal
+
+
+//Rodar apenar uma vez estes dois comandos, pois uma vez inserido o nome de usuario ele fica no git
+
+git config --global user.name "UsuarioGit" // Nome de usuário local (na sua máquina)
+
+git config --global user.email "seuemail" // Insere seu e-mail no git
+
+git status //verifica se houve alteração na pasta do projeto
+
+
+//para incluir o arquivo no próximo commit (na próxima versão)
+
+git add .
+ou
+git add nomedoarquivoaincluir
+
+//para gerar uma versão
+
+git commit -m "descrição/especificação do que foi alterado" 
+
+// para verificar as versões (commit)
+
+git log 
+
+// para retornar a um commit específico (do que me pareceu, faz com que o HEAD seja o ID colocado).
+
+git reset --hard <id do commit> // para pegar o id do commit, basta executar um git log
+
+//para colocar os arquivos no servidor remoto (GitHub), copiar o link do git do repositório com o comando
+git remote add origin
+
+git push -u origin main
